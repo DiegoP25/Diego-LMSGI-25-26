@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- -->
+
+<numeros>
+
+  <numero valor="1"> <!-- otra forma de hacerlo es con elementos hijos-->
+    <letra>u</letra>
+    <letra>n</letra> 
+    <letra>o</letra> 
+  </numero>
+
+  <_2 letra1="d" letra2="o" letra3="s">22</_2>
+  
+  <numero6 letra1="s" letra2="e" letra3="i" letra4="s">666666</numero6>
+    <!-- no podemos iniciar con número en las etiquetas, pero si con letras y guion bajo(_)  -->
+    <!-- atributos no pueden repetirse, cambiado letra por letra1, letra2, etc. -->
+    <!-- etiquetas cerradas correctamente-->
+     
+</numeros>
+
+
+<!-- Archivo a corregir: -->
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<numeros>
+<1 letra="u" letra="n" letra="o">1</>
+<2 letra="d" letra="o" letra="s">22</>
+<6 letra="s" letra="e" letra="i" letra="s">666666</>
+</numeros> -->

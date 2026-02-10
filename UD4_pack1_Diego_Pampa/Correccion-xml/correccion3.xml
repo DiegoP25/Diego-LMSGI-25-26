@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--La primera palabra X estaba en mayúscula, cambiada a x minúscula-->
+
+
+<!--Solo puede existir un elemento raiz, se ha agregado el elemento figuras como raiz-->
+<figuras>
+  
+  <!-- El error es el mismo en los tres elementos-->
+  <triangulo base="7" altura="5"/> <!-- espacio entre atributo base y altura, cerrado correctamente los atributos-->
+  <triangulo base="2" altura="6"/>
+  <triangulo base="3" altura="3"/>
+
+</figuras>
+
+
+<!-- Archivo a corregir: -->
+<!-- <?Xml version="1,0" encoding="UTF-8"?>
+<triangulo base="7"altura="5">
+<triangulo base="2"altura="6">
+<triangulo base="3"altura="3"> -->

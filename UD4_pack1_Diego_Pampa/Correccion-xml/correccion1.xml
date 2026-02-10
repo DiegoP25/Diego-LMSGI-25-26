@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- Le agregue: encoding="UTF-8" -->
+
+<documento>
+
+  <p>Mi Primer <destacar importancia="1">documento XML</destacar></p>  
+  <!-- cerramos correctamente la etiqueta destacar-->
+   <!-- todos los atributos deben ir con comillas-->
+
+  <p>Comienza con la etiqueta &lt;documento&gt;</p> 
+  <!-- Agregado el &lt; correctamente-->
+  
+  <p>A continuacion colocamos un elemento sin contenido:</p>
+  <!-- Creo que es agregarle dos puntos al final-->
+
+  <imagen fichero="imagen.gif"/> <!-- Etiqueta cerrada correctamente-->
+
+</documento>
+
+
+<!-- <?xml version="1.0"?>
+<documento>
+<p>Mi Primer <destacar importancia=1>documento
+XML</destacar></p]
+<p>Comienza con la etiqueta <documento&gt;</p>
+<p>A continuacion colocamos un elemento sin
+contenido</p>
+<imagen fichero="imagen.gif">
+</documento> -->
