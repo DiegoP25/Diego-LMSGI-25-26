@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pedido>
+
+  <tractor>
+    <componente nom_fabricante='luis' fragil='no'>
+         <fecha_entrega dia="12" mes='02' any='2026'/>
+         <peso unidad='gramos'>25000</peso>
+         <numero_serie>6789ABC</numero_serie>
+         <kmmaxims>400</kmmaxims>
+    </componente>
+  </tractor>
+  
+  <tractor>
+    <componente nom_fabricante='Fabricante7' fragil='no'>
+         <fecha_entrega mes='01' any='2026'/>
+         <peso unidad='kilos'>350</peso>
+         <numero_serie>4327DEF</numero_serie>
+         <kmmaxims>2000</kmmaxims>
+    </componente>
+
+    <componente nom_fabricante='Fabricante9' fragil='si'>
+         <fecha_entrega mes='12' any='2025'/>
+         <peso unidad='gramos'>84500</peso>
+         <numero_serie>643GTG</numero_serie>
+         <!-- El atributo "kmmaxims" es opcional -->
+    </componente>
+
+  </tractor>
+
+</pedido>

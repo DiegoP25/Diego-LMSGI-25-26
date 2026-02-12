@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<archivo>
+
+  <operacion>
+
+    <venta> <!-- 1 o mas titulos vendidos-->
+      <titulo>Libro A</titulo>
+      <cantidad>15</cantidad>
+      <entregado>si</entregado>
+      <importe moneda="euro">31</importe>
+    </venta>
+    
+    <compra>
+      <titulo>Libro E</titulo>
+      <titulo>Libro Z</titulo>
+      <proveedor>Ricardo</proveedor>
+      <fecha>
+        <dia>14</dia>
+        <mes>04</mes>
+        <anyo>2025</anyo>
+      </fecha>
+    </compra>
+
+  </operacion>
+
+
+  <operacion>
+
+    <venta> <!-- 1 o mas titulos vendidos-->
+      <titulo>Libro I</titulo>
+      <titulo>Libro J</titulo>
+      <cantidad>19</cantidad>
+      <entregado>si</entregado>
+      <importe moneda="euro">12</importe>
+    </venta>
+
+    <venta> <!-- 1 o mas titulos vendidos-->
+      <titulo>Libro H</titulo>
+      <cantidad>3</cantidad>
+      <entregado>no</entregado>
+      <importe moneda="euro">27</importe>
+    </venta>
+    
+    <compra>
+      <titulo>Libro E</titulo>
+      <proveedor>Andres</proveedor>
+      <fecha>
+        <dia>20</dia>
+        <mes>12</mes>
+        <anyo>2021</anyo>
+      </fecha>
+    </compra>
+
+  </operacion>
+
+
+  <operacion>
+
+     <compra>
+      <titulo>Libro E</titulo>
+      <titulo>Libro V</titulo>
+      <proveedor>Luis</proveedor>
+      <fecha>
+        <dia>14</dia>
+        <mes>11</mes>
+        <anyo>2025</anyo>
+      </fecha>
+    </compra>
+    
+    <compra>
+      <titulo>Libro E</titulo>
+      <proveedor>Juan</proveedor>
+      <fecha>
+        <dia>12</dia>
+        <mes>02</mes>
+        <anyo>2026</anyo>
+      </fecha>
+    </compra>
+
+  </operacion>
+
+</archivo>
