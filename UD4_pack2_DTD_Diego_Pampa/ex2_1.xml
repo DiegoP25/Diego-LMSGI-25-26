@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pedido SYSTEM "ex2.dtd">
+
+<pedido>
+
+  <tractor>
+    <componente nom_fabricante='Fabricante2' fragil='si'>
+          <!-- El atributo "dia" es opcional -->
+         <fecha_entrega mes='10' any='2025'/>
+         <peso unidad='kilos'>53</peso>
+         <numero_serie>ABC123</numero_serie>
+         <kmmaxims>1000</kmmaxims>
+    </componente>
+  </tractor>
+
+</pedido>
