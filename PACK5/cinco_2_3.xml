@@ -1,0 +1,9 @@
+<vehicles xsi:noNamespaceSchemaLocation="cinco_2.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <vehicle matricula="2222BBB" tipus="avió">
+  <marca>Boeing</marca>
+  <any>2020</any>
+  </vehicle>
+
+</vehicles>

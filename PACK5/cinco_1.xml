@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<comanda xsi:noNamespaceSchemaLocation="cinco_1.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="P01">
+  <client>
+    <nom>Joan</nom>
+    <email>joan@email.com</email>
+  </client>
+  
+  <linia numero="1">
+    <article>Teclat</article>
+    <quantitat>2</quantitat>
+    <preu_unitari>25.50</preu_unitari>
+  </linia>
+  
+  <linia numero="2">
+    <article>Ratoli</article>
+    <quantitat>1</quantitat>
+    <preu_unitari>12.00</preu_unitari>
+  </linia>
+
+</comanda>
