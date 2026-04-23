@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vehicles xsi:noNamespaceSchemaLocation="cinco_2.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <vehicle matricula="1111AAA" tipus="moto">
+  <marca>Honda</marca>
+  <combustible>gasolina</combustible>
+  <any>2019</any>
+  </vehicle>
+</vehicles>

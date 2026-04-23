@@ -1,0 +1,16 @@
+<!ELEMENT pedido (tractor+)>
+<!ELEMENT tractor (componente+)>
+<!ELEMENT componente (fecha_entrega, peso, numero_serie, kmmaxims?)>
+
+<!ATTLIST componente nom_fabricante CDATA #REQUIRED>
+<!ATTLIST componente fragil (si|no) #REQUIRED>
+
+<!ELEMENT fecha_entrega (#PCDATA)>
+<!ATTLIST fecha_entrega dia CDATA #IMPLIED mes CDATA #REQUIRED> <!--dos atributos en la misma linea-->
+<!ATTLIST fecha_entrega any CDATA #REQUIRED>
+
+<!ELEMENT peso (#PCDATA)>
+<!ATTLIST peso unidad (gramos | kilos) #REQUIRED>
+
+<!ELEMENT numero_serie (#PCDATA)>
+<!ELEMENT kmmaxims (#PCDATA)>

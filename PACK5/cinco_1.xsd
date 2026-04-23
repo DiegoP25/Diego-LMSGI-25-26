@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="comanda">
+    <xs:complexType>
+      <xs:sequence>
+
+        <xs:element name="client">
+          <xs:complexType>
+            <xs:sequence>
+
+              <xs:element name="nom" type="xs:string"/>
+
+              <xs:choice> <!-- Solo una opción -->
+                <xs:element name="email" type="emailType"/>
+                <xs:element name="telefon" type="xs:string"/>
+              </xs:choice>
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        
+        <xs:element name="linia" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+
+              <xs:element name="article" type="xs:string"/>
+
+              <xs:element name="quantitat" type="xs:positiveInteger"/>
+              
+              <xs:element name="preu_unitari">
+                <xs:simpleType>
+                  <xs:restriction base="xs:decimal">
+                    <xs:pattern value=".*\.[0-9]{2}"/>
+                     <!-- <xs:fractionDigits value="2"/> -->
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              
+            </xs:sequence>
+            <xs:attribute name="numero" type="xs:int"></xs:attribute>
+          </xs:complexType>
+        </xs:element>
+
+
+      </xs:sequence>
+
+      <xs:attribute name="id" type="xs:ID"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="emailType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value=".+@.+\..+"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+
+</xs:schema>

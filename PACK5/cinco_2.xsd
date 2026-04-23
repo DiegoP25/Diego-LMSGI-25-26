@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="vehicles">
+    <xs:complexType>
+      <xs:sequence> 
+        <xs:element name="vehicle" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:all>
+              <xs:element name="marca" type="xs:string"/>
+              <xs:element name="any">
+                <xs:simpleType>
+                  <xs:restriction base="xs:integer">
+                    <xs:minInclusive value="1900"/>
+                    <xs:maxInclusive value="2100"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              
+              <xs:element name="combustible" minOccurs="0"> <!-- Combustible es opcional -->
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="gasolina"/>
+                    <xs:enumeration value="diesel"/>
+                    <xs:enumeration value="electrico"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:all>
+            
+            <xs:attribute name="matricula" use="required">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="[0-9]{4}[A-Z]{3}"/> <!-- patrón de 4 números y 3 letras -->
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            
+            <xs:attribute name="tipus" use="required">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="cotxe"/>
+                  <xs:enumeration value="moto"/>
+                  <xs:enumeration value="bicicleta"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
