@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="2_6.css">
+  <title>Document</title>
+</head>
+<body>
+  
+    <h1>Gestor de Tasques</h1>
+
+    <form action="">
+
+      <label> 
+        <input type="text" name="text" id="text" placeholder="Afegeix una nova tasca...">
+        <input type="button" value="Afegeix" id="button">
+      </label>    
+      
+      <div>
+          <label for="filtrar">Filtrar</label>
+          <select name="select" id="select">
+              <option value="totes">Totes</option>
+              <option value="completades">Completades</option>
+              <option value="pendents">Pendents</option>
+          </select>
+      </div>
+
+
+      <ul id="llista-tasques">  <!-- para ir añadiendo las tareas -->
+      
+      </ul>
+
+    </form>
+
+    <script src="2_6.js"></script>
+</body>
+</html>

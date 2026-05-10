@@ -1,0 +1,5 @@
+
+.completed { /* Estilo para las tareas completadas*/
+  text-decoration: line-through;  /*Tacha el texto de la tarea*/
+  color: gray;
+}
